@@ -36,10 +36,19 @@ function Search() {
         })
     }
 
-    const saveBook = (event) => {
-        let {value} = event.target;
-        console.log(value);
-        APIbooks.addBook(value);
+    const saveBook = (book) => {
+        const data = {
+            title:book.volumeInfo.title,
+            author:book.volumeInfo.authors,
+            description:book.volumeInfo.description,
+            image: book.volumeInfo.imageLinks.thumbnail,
+            link:book.volumeInfo.infoLink
+        }
+       
+        APIbooks.addBook(data).then(res=>{
+            console.log("saved",res)
+            
+        });
     }
     
  
