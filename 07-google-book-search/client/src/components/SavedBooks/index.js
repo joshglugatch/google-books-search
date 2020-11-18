@@ -3,7 +3,6 @@ import React from "react";
 import "./style.css";
 
 function SavedBooks({ books, deleteBooks }) {
-  console.log("books", books);
   return (
 
     books.map(book => {
@@ -12,15 +11,13 @@ function SavedBooks({ books, deleteBooks }) {
           <div className="card">
             <div className="row mb-4 mt-3">
               <div className="col-lg-4 bookImg">
-                {/* <img src={book.image} alt="title" className="img-fluid" /> */}
-                {book.image ? <img src={book.image} alt="title" className="img-fluid" /> 
+                {book.image ? <img src={book.image} alt="title" className="img-fluid" />
                   : <img src="https://via.placeholder.com/140x100" alt="title" className="img-fluid" />}
-                {/* <img src="https://via.placeholder.com/140x100" alt="title" className="img-fluid" /> */}
               </div>
               <div className="col-lg-8">
                 <h2>{book.title}</h2>
                 <p>{book.author}</p>
-                <p>{book.synopsis}</p>
+                <p>{book.description}</p>
                 <a onClick={() => deleteBooks(book._id)} className="col-sm-1 deleteBtn">X</a>
                 <button className="btn btn-primary">VIEW</button>
               </div>
