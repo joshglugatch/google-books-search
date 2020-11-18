@@ -13,3 +13,14 @@
 .logo2{
     width: 200px;
 }
+.hideModal{
+    display: none;
+}
+
+.showModal{
+    display: block;
+}
+
+.modal{
+    top: 25%;
+}

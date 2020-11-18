@@ -19,7 +19,7 @@ function SavedBooks({ books, deleteBooks }) {
                 <p>{book.author}</p>
                 <p>{book.description}</p>
                 <a onClick={() => deleteBooks(book._id)} className="col-sm-1 deleteBtn">X</a>
-                <button className="btn btn-primary">VIEW</button>
+                <a className="btn btn-primary" target="_blank" href={book.link}>View</a>
               </div>
             </div>
           </div>
