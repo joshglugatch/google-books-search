@@ -10,7 +10,7 @@ function Results(props) {
 <div className="card">
         <div className="row">
         <div className="col-lg-4">
-            <img src={book.volumeInfo.imageLinks.smallThumbnail} alt="title"/>
+            <img src={book.volumeInfo.imageLinks.smallThumbnail} alt={book.volumeInfo.title}/>
         </div>
         <div className="col-lg-8">
           <h2>{book.volumeInfo.title}</h2>
