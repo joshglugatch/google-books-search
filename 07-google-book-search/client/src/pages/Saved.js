@@ -28,16 +28,6 @@ function Saved() {
             <Navbar />
             <Jumbotron />
             <SavedBooks books={books} deleteBooks={deleteBooks}/>
-            {/* {books.map((book)=>{
-           return <div key={book._id} className="container">
-           <div className="row">
-               <div className="col-sm-4"></div>               
-               <div className="col-sm-3">{book.title + " "}</div>
-           <a onClick={() => deleteBooks(book._id)} className="col-sm-1">X</a>
-           </div>
-           </div>;
-        })}
-        <div className="padding"></div> */}
         </React.Fragment>
     )
 }
