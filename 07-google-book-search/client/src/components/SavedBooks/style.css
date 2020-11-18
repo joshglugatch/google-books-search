@@ -1,3 +1,13 @@
 .deleteBtn {
     cursor: pointer;
 }
+
+.card {
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.bookImg {
+    text-align: center;
+    margin-top: 20px;
+}
