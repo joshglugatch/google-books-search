@@ -4,12 +4,13 @@ import React from "react";
 
 export function SearchBar(props) {
   return (
-    <div className="container">
+    <div className="container mb-5">
     <div className="card">
       <input type="text" className="form-control text-center" onChange={props.handleSearchChange} />
-      <button className="btn btn-secondary" onClick={props.searchBooks}> Search </button>
+      
       
     </div>
+    <button className="btn btn-primary mt-4" onClick={props.searchBooks}> Search </button>
     </div>
   );
 }
