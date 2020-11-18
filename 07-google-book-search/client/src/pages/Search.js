@@ -22,10 +22,6 @@ function Search() {
         setModalClass("modal hideModal");
     }
 
-    function saveModal(book) {
-        setModalClass("modal showModal");
-        setText(book.volumeInfo.title + " was saved!");
-    }
 
     const handleSearchChange = (e) => {
         const { value } = e.target
@@ -48,6 +44,10 @@ function Search() {
     }
 
     const saveBook = (book) => {
+
+        setModalClass("modal showModal");
+        setText(book.volumeInfo.title + " was saved!");
+
         const data = {
             title: book.volumeInfo.title,
             author: book.volumeInfo.authors,
@@ -76,7 +76,6 @@ function Search() {
                 data={books}
                 saveBook={saveBook}
                 modalClose={modalClose}
-                saveModal={saveModal}
                 text={text}
                 modalClass={modalClass}
             />
