@@ -16,9 +16,6 @@ function Search() {
         
 
     
-    
-
-
     const handleSearchChange = (e) => {
         const { value } = e.target
         setSearchState(value)
@@ -26,14 +23,17 @@ function Search() {
     };
 
 
-    const searchBooks = () => {
+    const searchBooks = async () => {
         
-        APIbooks.getBooks(searchState)
+       let newBooks = await APIbooks.getBooks(searchState)
         .then((res) => {
             setLoading(false);
-            setBooks(res.data.items)
+            return res.data.items;
             console.log(books)
         })
+        console.log("newBooks: ", newBooks);
+        setBooks(newBooks);
+        setLoading(false);
     }
 
     const saveBook = (book) => {
