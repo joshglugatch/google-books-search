@@ -15,10 +15,6 @@ function Search() {
 
         
 
-    // useEffect(()=>{
-
-    // },[books])
-
     
     
 
@@ -55,19 +51,12 @@ function Search() {
         
         <SearchBar 
         handleSearchChange={handleSearchChange}
-        searchBooks={searchBooks}/>
-        {books.map((book) => {
-                
-            <Results
-            image={book.volumeInfo.imageLinks.smallThumbnail}
-            title={book.volumeInfo.title}
-            author={book.volumeInfo.authors[0]}
-            link={book.volumeInfo.infolink}
-            description={book.volumeInfo.description}
-            saveBook={saveBook}
-            id={book.id}
-            />
-        })}
+        searchBooks={searchBooks}/>    
+        <Results
+        data={books}
+        saveBook={saveBook}
+        />
+          
 
         </div>
     )
