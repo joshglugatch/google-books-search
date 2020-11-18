@@ -10,6 +10,7 @@
     box-shadow: 5px 5px 10px black;
 }
 
+
 .hideModal{
     display: none;
 }
@@ -20,4 +21,8 @@
 
 .modal{
     top: 25%;
+
+.logo2{
+    width: 200px;
+
 }
