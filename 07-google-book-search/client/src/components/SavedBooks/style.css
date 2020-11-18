@@ -5,6 +5,8 @@
 .card {
     margin-top: 20px;
     border-radius: 12px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
 }
 
 .bookImg {
