@@ -5,21 +5,7 @@ function Results(props) {
   const books = props.data
   console.log("books search: ", books);
 
-  const [modalClass, setModalClass] = useState("modal hideModal");
-  const [text, setText] = useState("Saved!")
 
-
-  useEffect(() => {
-  }, [modalClass]);
-
-  function modalClose() {
-    setModalClass("modal hideModal");
-  }
-
-  function saveModal(book) {
-    setModalClass("modal showModal");
-    setText(book.volumeInfo.title + " was saved!");
-  }
 
   return (
     <>
@@ -41,7 +27,7 @@ function Results(props) {
                     : book.volumeInfo.authors}</p>
                   <p className="mr-4">{book.volumeInfo.description}</p>
                   <a className="btn btn-primary" target="_blank" href={book.volumeInfo.infoLink}>View</a>
-                  <button className="ml-3 btn btn-primary" onClick={() => { props.saveBook(book) }, () => {saveModal(book)}}>Save</button>
+                  <button className="ml-3 btn btn-primary" onClick={() => { props.saveBook(book) }}>Save</button>
                 </div>
               </div>
             </div>
@@ -55,7 +41,7 @@ function Results(props) {
           </div>
         </div>}
       {/* modal start */}
-      <div className={modalClass} id="contactModal" role="dialog">
+      <div className={props.modalClass} id="contactModal" role="dialog">
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
@@ -63,10 +49,10 @@ function Results(props) {
               </button>
             </div>
             <div className="modal-body mt-2">
-              <p>{text}</p>
+              <p>{props.text}</p>
             </div>
             <div className="modal-footer">
-              <button onClick={() => modalClose()} type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button onClick={() => props.modalClose()} type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
