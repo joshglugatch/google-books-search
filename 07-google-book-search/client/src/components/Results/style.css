@@ -9,3 +9,15 @@
     background-color: white;
     box-shadow: 5px 5px 10px black;
 }
+
+.hideModal{
+    display: none;
+}
+
+.showModal{
+    display: block;
+}
+
+.modal{
+    top: 25%;
+}
