@@ -17,9 +17,9 @@ function SavedBooks({ books, deleteBooks }) {
               <div className="col-lg-8">
                 <h2>{book.title}</h2>
                 <p>{book.author}</p>
-                <p>{book.description}</p>
-                <a onClick={() => deleteBooks(book._id)} className="col-sm-1 deleteBtn">X</a>
+                <p className="mr-4">{book.description}</p>
                 <a className="btn btn-primary" target="_blank" href={book.link}>View</a>
+                <button onClick={() => deleteBooks(book._id)} className=" deleteBtn btn btn-primary ml-3">Remove</button> 
               </div>
             </div>
           </div>
@@ -30,32 +30,3 @@ function SavedBooks({ books, deleteBooks }) {
 };
 
 export default SavedBooks;
-
-{/* <div className="padding"></div>
-          <h2>{books.title}</h2>
-          <p>{books.author}</p>
-          <p>{books.description}</p>
-          <a src={books.link}>View</a>
-          <span className="remove">
-        𝘅
-      </span> */}
-
-
-
-
-       //   <div className="card">
-  //       <div className="row">
-
-  //       {books.map((book)=>{
-  //          return <div key={book._id} className="container">
-  //          <div className="row">
-  //              <div className="col-sm-4"></div>               
-  //              <h5 className="col-sm-3">{book.title + " "}</h5>
-
-  //          </div>
-  //          </div>;
-  //       })}
-
-  //       </div>
-  //   </div>
-  // );
