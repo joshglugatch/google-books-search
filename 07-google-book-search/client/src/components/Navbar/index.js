@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 
 // Navbar component for each page
@@ -16,10 +17,10 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-md-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="/search">Search</a>
+                            <NavLink to="/search" className="nav-link">Search</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/saved">Saved</a>
+                            <NavLink to="/saved" className="nav-link">Saved</NavLink>
                         </li>
                     </ul>
                     <div className="px-3"></div>
