@@ -3,7 +3,7 @@ import "./style.css"
 
 function Results(props) {
   const books = props.data
-  console.log("books search: ", books);
+  // console.log("books search: ", books);
 
 
 
