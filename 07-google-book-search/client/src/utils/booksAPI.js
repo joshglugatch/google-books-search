@@ -19,10 +19,3 @@ export default {
 
 }
 
-
-// .then(function(response){
-//     console.log("response", response);
-//     return response;
-// }, function(err) {
-//     console.log(err)
-// })

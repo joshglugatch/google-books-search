@@ -7,7 +7,7 @@ function SavedBooks({ books, deleteBooks }) {
 
     books.map(book => {
       return (
-        <div className="container">
+        <div key={book.id} className="container">
           <div className="card">
             <div className="row mb-4 mt-3">
               <div className="col-lg-4 bookImg">
