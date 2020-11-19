@@ -27,7 +27,7 @@ function Search() {
     const handleSearchChange = (e) => {
         const { value } = e.target
         setSearchState(value)
-        console.log(searchState)
+        // console.log(searchState)
     };
 
 
@@ -52,7 +52,7 @@ function Search() {
             image = book.volumeInfo.imageLinks.thumbnail
         }
         
-        console.log("book id: ", book.id);
+        // console.log("book id: ", book.id);
         if(!ids.includes(book.id)){
             setIds([...ids, book.id]);
             setModalClass("modal showModal");
@@ -61,19 +61,6 @@ function Search() {
             setModalClass("modal showModal");
             setText(book.volumeInfo.title + " is already saved!");
         }
-        // APIbooks.getApiBooks()
-        //     .then(res => {
-        //         // saved.push(res.data.id);
-        //         console.log("save response: ", res);
-        //         // console.log("saved ids: ", saved)
-        //         if (res.data.includes(book.id)) {
-        //             setModalClass("modal showModal");
-        //             setText(book.volumeInfo.title + " is already saved!");
-        //         } else {
-        //             setModalClass("modal showModal");
-        //             setText(book.volumeInfo.title + " was saved!");
-        //         }
-        //     })
 
 
         const data = {
