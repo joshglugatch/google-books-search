@@ -45,6 +45,13 @@ function Search() {
 
     const saveBook = (book) => {
 
+        var image;
+        if(book.volumeInfo.imageLinks===undefined){
+            image = "./googlebookslogo.png"
+        } else {
+            image = book.volumeInfo.imageLinks.thumbnail
+        }
+
         setModalClass("modal showModal");
         setText(book.volumeInfo.title + " was saved!");
 
@@ -52,7 +59,7 @@ function Search() {
             title: book.volumeInfo.title,
             author: book.volumeInfo.authors,
             description: book.volumeInfo.description,
-            image: book.volumeInfo.imageLinks.thumbnail,
+            image: image,
             link: book.volumeInfo.infoLink
         }
 
