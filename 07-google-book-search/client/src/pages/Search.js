@@ -36,7 +36,6 @@ function Search() {
             .then((res) => {
                 setLoading(false);
                 return res.data.items;
-                console.log(books)
             })
         console.log("newBooks: ", newBooks);
         setBooks(newBooks);

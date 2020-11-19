@@ -41,6 +41,7 @@ function Results(props) {
                     <a
                       className="btn btn-primary"
                       target="_blank"
+                      rel="noreferrer"
                       href={book.volumeInfo.infoLink}
                     >
                       View
