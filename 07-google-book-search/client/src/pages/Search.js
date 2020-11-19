@@ -12,10 +12,11 @@ function Search() {
     // variables for the book the user is searching for
     const [searchState, setSearchState] = useState("");
     const [books, setBooks] = useState([]);
-   
+
     // variables for the modal that will pop up when the user clicks on the save book button
     const [modalClass, setModalClass] = useState("modal hideModal");
     const [text, setText] = useState("Saved!");
+    // saved book ids
     const [ids, setIds] = useState([]);
 
     // for the modal display to hide or show
@@ -35,11 +36,23 @@ function Search() {
 
     // function that is grabbing the information from the google books API
     const searchBooks = async () => {
+        let holder = [];
+        holder.length = 0;
         let newBooks = await APIbooks.getBooks(searchState)
             .then((res) => {
                 return res.data.items;
             });
         setBooks(newBooks);
+        // grab saved books whenever a new search occurs
+        APIbooks.getApiBooks()
+            .then(res => {
+                for (let i = 0; i < res.data.length; i++) {
+                    holder.push(res.data[i].id);
+                }
+                console.log("savebook response: ", res)
+            })
+        console.log("holder: ", holder);
+        setIds(holder);
     };
 
     // function that allows books to be saved qne displaying the modal
@@ -51,7 +64,7 @@ function Search() {
         } else {
             image = book.volumeInfo.imageLinks.thumbnail
         };
-        
+
         // console.log("book id: ", book.id);
         if (!ids.includes(book.id)) {
             setIds([...ids, book.id]);
