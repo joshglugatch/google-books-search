@@ -57,7 +57,7 @@ function Results(props) {
                         props.saveBook(book);
                       }}
                     >
-                      Save
+                      Save Book
                     </button>
                   </div>
                 </div>
