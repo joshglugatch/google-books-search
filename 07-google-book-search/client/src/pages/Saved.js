@@ -4,6 +4,7 @@ import Jumbotron from "../components/Jumbotron";
 import APIbooks from "../utils/booksAPI";
 import SavedBooks from "../components/SavedBooks";
 
+// Saved page displaying the books that are in the database
 function Saved() {
     const [books, setBooks] = useState([]);
 
@@ -15,24 +16,26 @@ function Saved() {
         .then((res)=>{
            console.log(res);
         })
-    }
+    };
 
+    // grabbing the books from the database
     useEffect(() => {
         APIbooks.getApiBooks()
         .then(res=>setBooks(res.data))
         // console.log(books)
-        }, [books])
+        }, [books]);
 
     return(
-
         <div className="mb-5">
         <React.Fragment>
             <Navbar />
             <Jumbotron />
-            <SavedBooks books={books} deleteBooks={deleteBooks}/>
+            <SavedBooks 
+                books={books} 
+                deleteBooks={deleteBooks}/>
         </React.Fragment>
         </div>
-    )
-}
+    );
+};
 
 export default Saved;
