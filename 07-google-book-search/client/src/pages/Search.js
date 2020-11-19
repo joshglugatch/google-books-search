@@ -84,7 +84,7 @@ function Search() {
 
 
     return (
-        <div>
+        <div className="mb-5">
             <Navbar />
             <Jumbotron />
 

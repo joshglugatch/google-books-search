@@ -9,11 +9,11 @@ function Results(props) {
   return (
     <>
       {books !== undefined ? (
-        books.map((book) => {
+        books.map((book, i) => {
           // console.log(book.volumeInfo.authors.length)
 
           return (
-            <div key={book.id} className="container">
+            <div key={book.id + i} className="container">
               <div className="card result">
                 <div className="row mb-4 mt-3">
                   <div className="col-lg-4 bookImg">
