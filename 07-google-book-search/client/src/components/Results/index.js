@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+// Results components for the search results of the user
 function Results(props) {
 
   const books = props.data
@@ -8,6 +9,7 @@ function Results(props) {
 
   return (
     <>
+    {/* mapping through each book data and then displaying the info from the API and if there are no results, display the mo matching results container */}
       {books !== undefined ? (
         books.map((book, i) => {
           // console.log(book.volumeInfo.authors.length)
@@ -17,6 +19,7 @@ function Results(props) {
               <div className="card result">
                 <div className="row mb-4 mt-3">
                   <div className="col-lg-4 bookImg">
+                    {/* if there are no images of the books, set a defauly logo */}
                     {book.volumeInfo.imageLinks ? (
                       <img
                         className="img-fluid"
@@ -31,8 +34,9 @@ function Results(props) {
                       />
                     )}
                   </div>
-                  <div className="col-lg-8">
+                  <div className="col-lg-8 mainContent">
                     <h2>{book.volumeInfo.title}</h2>
+                    {/* if there are more than x number of authors, join with an "&" */}
                     <p>
                       {book.volumeInfo.authors !== undefined
                         ? book.volumeInfo.authors.join(" & ")
@@ -53,7 +57,7 @@ function Results(props) {
                         props.saveBook(book);
                       }}
                     >
-                      Save
+                      Save Book
                     </button>
                   </div>
                 </div>
@@ -113,6 +117,6 @@ function Results(props) {
       </div>
     </>
   );
-}
+};
 
 export default Results;
