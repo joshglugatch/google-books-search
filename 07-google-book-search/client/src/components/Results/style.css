@@ -1,34 +1,35 @@
-.bookImg{
-   margin-top: 20px;
-    text-align: center;
+.bookImg {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.result{
-    border-radius: 12px ;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 5px 5px 10px black;
+.result {
+  border-radius: 12px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 10px black;
 }
 
-.logo2{
-    width: 200px;
-}
-.hideModal{
-    display: none;
+.logo2 {
+  width: 200px;
 }
 
-.showModal{
-    display: block;
+.hideModal {
+  display: none;
 }
 
-.modal{
-    text-align: center;
-    top: 25%;
+.showModal {
+  display: block;
 }
 
+.modal {
+  text-align: center;
+  top: 25%;
+}
 
 .modal-content {
-    box-shadow: 5px 5px 10px black;
-    padding: 5px black solid;
+  box-shadow: 5px 5px 10px black;
+  padding: 5px black solid;
+  background-color: rgb(72, 136, 244);
+  color: white;
 }
-
