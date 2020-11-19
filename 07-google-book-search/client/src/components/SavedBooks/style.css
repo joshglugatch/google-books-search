@@ -1,5 +1,16 @@
 .deleteBtn {
     cursor: pointer;
+    background-color: #ff6666;
+    outline: #ff4d4d;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background-color: #ff4d4d;
+}
+
+.viewBtn:hover {
+    color: black;
 }
 
 .card {
