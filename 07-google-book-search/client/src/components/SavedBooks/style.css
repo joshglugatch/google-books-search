@@ -6,9 +6,7 @@
 }
 .deleteBtn:hover {
     background-color: #ff4d4d;
-}
-.viewBtn:hover {
-    color: black;
+    color: white;
 }
 .card {
     margin-top: 20px;
