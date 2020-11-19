@@ -31,7 +31,7 @@ function Results(props) {
                       />
                     )}
                   </div>
-                  <div className="col-lg-8">
+                  <div className="col-lg-8 mainContent">
                     <h2>{book.volumeInfo.title}</h2>
                     <p>
                       {book.volumeInfo.authors !== undefined
