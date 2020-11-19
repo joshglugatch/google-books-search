@@ -1,5 +1,4 @@
 import React from "react";
-// import booksAPI from "../../utils/booksAPI";
 import "./style.css";
 
 function SavedBooks({ books, deleteBooks }) {
@@ -24,9 +23,9 @@ function SavedBooks({ books, deleteBooks }) {
             </div>
           </div>
         </div>
-      )
+      );
     })
-  )
+  );
 };
 
 export default SavedBooks;

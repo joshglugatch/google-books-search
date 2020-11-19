@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css"
 
+// Jumbotron component for each page
 function Jumbotron() {
   return (
     <div className="jumbotron jumbotron-fluid bg-dark text-white">
