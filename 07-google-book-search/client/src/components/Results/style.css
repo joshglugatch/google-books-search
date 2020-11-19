@@ -25,3 +25,8 @@
     text-align: center;
     top: 25%;
 }
+
+.modal-content {
+    box-shadow: 5px 5px 10px black;
+    padding: 5px black solid;
+}
