@@ -38,13 +38,13 @@ function Search() {
                 return res.data.items;
                 console.log(books)
             })
-        console.log("newBooks: ", newBooks);
+        // console.log("newBooks: ", newBooks);
         setBooks(newBooks);
         setLoading(false);
     }
 
     const saveBook = (book) => {
-
+        
         setModalClass("modal showModal");
         setText(book.volumeInfo.title + " was saved!");
 
@@ -59,6 +59,9 @@ function Search() {
         APIbooks.addBook(data).then(res => {
             console.log("saved", res)
 
+        }).then(err=>{
+            console.log(err);
+            setText(book.volumeInfo.title + " is already saved!");
         });
     }
 
