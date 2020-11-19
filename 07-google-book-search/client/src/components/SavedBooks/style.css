@@ -18,8 +18,6 @@
     text-align: center;
     margin-top: 20px;
 }
-@media (max-width: 992px) {
-    .savedContent {
-        padding: 40px;
-    }
+  .savedContent {
+      padding: 40px;
   }
