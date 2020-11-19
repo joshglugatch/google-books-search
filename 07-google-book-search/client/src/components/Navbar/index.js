@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+// Navbar component for each page
 function Navbar() {
     return (
         <header>
