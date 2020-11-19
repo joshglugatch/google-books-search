@@ -27,7 +27,7 @@ Welcome to our Google Books App! We make it easy for you to search any book and 
 <br>
 
 ## Links
-* [GitHub-Repo]()
+* [GitHub-Repo](https://github.com/janessaref/google-books-search)
 * [Deployed-Link]()
 
 <br>
@@ -35,12 +35,12 @@ Welcome to our Google Books App! We make it easy for you to search any book and 
 <br>
 
 ## Technologies
-* [react]()
-* [axios]()
-* [express]()
-* [if-env]()
-* [mongoose]()
-* [react-router-dom]()
+* [react](https://reactjs.org/)
+* [axios](https://www.npmjs.com/package/axios)
+* [express](https://www.npmjs.com/package/express)
+* [if-env](https://www.npmjs.com/package/if-env)
+* [mongoose](https://mongoosejs.com/)
+* [react-router-dom](https://reactrouter.com/)
 
 <br>
 <hr>
