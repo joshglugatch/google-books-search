@@ -1,6 +1,7 @@
+// requiring mongoose and using it to create a new schema. 
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
+// Schema for the books that will be saved to the data base. 
 const bookSchema = new Schema({
   title: { type: String, required: false },
   author: { type: Array, required: false },
