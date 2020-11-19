@@ -18,7 +18,7 @@ function SavedBooks({ books, deleteBooks }) {
                 <h2>{book.title}</h2>
                 <p>{book.author.join(' & ')}</p>
                 <p className="mr-4">{book.description}</p>
-                <a className="btn btn-primary" target="_blank" href={book.link}>View</a>
+                <a className="btn btn-primary" target="_blank" rel="noreferrer" href={book.link}>View</a>
                 <button onClick={() => deleteBooks(book._id)} className=" deleteBtn btn btn-primary ml-3">Remove</button> 
               </div>
             </div>
