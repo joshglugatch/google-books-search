@@ -16,6 +16,7 @@ function Search() {
     // variables for the modal that will pop up when the user clicks on the save book button
     const [modalClass, setModalClass] = useState("modal hideModal");
     const [text, setText] = useState("Saved!");
+    // saved book ids
     const [ids, setIds] = useState([]);
 
     // for the modal display to hide or show
@@ -42,6 +43,7 @@ function Search() {
                 return res.data.items;
             });
         setBooks(newBooks);
+        // grab saved books whenever a new search occurs
         APIbooks.getApiBooks()
             .then(res => {
                 for (let i = 0; i < res.data.length; i++) {

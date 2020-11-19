@@ -8,31 +8,33 @@ import SavedBooks from "../components/SavedBooks";
 function Saved() {
     const [books, setBooks] = useState([]);
 
+    // delete books by id
     const deleteBooks = (id) => {
         // console.log(books);
         // console.log("working");
         // console.log(id);
         APIbooks.deleteBook(id)
             .then((res) => {
-                console.log(res);
+                // console.log(res);
+                // then update books
                 APIbooks.getApiBooks()
                     .then(response => {
-                        console.log("delete grab response: ", response);
+                        // console.log("delete grab response: ", response);
                         setBooks(response.data)
                     })
             })
 
     };
 
-    // grabbing the books from the database
+    // grabbing the books from the database on initial render
     useEffect(() => {
         APIbooks.getApiBooks()
             .then(res => setBooks(res.data))
         // console.log(books)
     }, []);
 
+    // re-render page when books is updated
     useEffect(() => {
-
     }, [books]);
 
     return (
