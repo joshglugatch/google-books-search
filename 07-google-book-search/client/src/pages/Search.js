@@ -11,7 +11,7 @@ function Search() {
 
     const [searchState, setSearchState] = useState("");
     const [books, setBooks] = useState([]);
-    const [loading, setLoading] = useState(true);
+   
     const [modalClass, setModalClass] = useState("modal hideModal");
     const [text, setText] = useState("Saved!");
     const [ids, setIds] = useState([]);
@@ -35,11 +35,10 @@ function Search() {
 
         let newBooks = await APIbooks.getBooks(searchState)
             .then((res) => {
-                setLoading(false);
                 return res.data.items;
             })
-        // console.log("newBooks: ", newBooks);
-        console.log("newBooks", newBooks);
+   
+        
         setBooks(newBooks);
     }
 
