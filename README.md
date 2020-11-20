@@ -5,6 +5,7 @@
 
 ## Table of Contents
 * [Description](#Description)
+* [GIFs of Project](#gifs-of-project)
 * [Repository Link](#repository-link)
 * [Deployed Link](#deployed-link)
 * [Technologies Used](#Technologies-Used)
@@ -24,6 +25,10 @@ Welcome to our Google Books Application using React! In this project, we made a 
 In this project, our team worked smoothly than expected to accomplish the output. It was a collaborative effort and was able to get most of the work done in a day and then some troubleshooting, styling fixes, etc. towards the end. There weren't many merge conflicts because we are able to openly communicate and review changes meticulously that code doesn't get lost. We spend hours together on call to be able to effectively communicate on things.
 
 <br>
+<hr>
+<br>
+
+## GIFs of Project
 
 Here's a GIF of the application.
 
@@ -45,7 +50,7 @@ Here is a GIF of our mobile application.
 <br>
 
 ## Deployed Link
-* [See Live Site]()
+* [See Live Site](https://googlelibrary-search.herokuapp.com/)
 
 <br>
 <hr>
