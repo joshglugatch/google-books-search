@@ -34,7 +34,7 @@ Here's a GIF of the application.
 
 ![Gif](./assets/booksGif2.gif)
 
-Here is a GIF of our mobile application. 
+Here is a GIF of our application viewed on a mobile device. 
 
 ![Gif](./assets/mobilegoogle.gif)
 
