@@ -1,6 +1,6 @@
 
 // Requiring our books models and exporting them. 
 module.exports = {
-    Book: require("./books")
+    Book: require("./Books")
   };
   
