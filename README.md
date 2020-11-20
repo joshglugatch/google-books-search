@@ -32,7 +32,7 @@ In this project, our team worked smoothly than expected to accomplish the output
 
 Here's a GIF of the application.
 
-![Gif](./assets/googleBook.gif)
+![Gif](./assets/booksGif2.gif)
 
 Here is a GIF of our mobile application. 
 
