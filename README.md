@@ -43,7 +43,7 @@ Here is a GIF of our application viewed on a mobile device.
 <br>
 
 ## Repository Link
-* [GitHub Repository](https://github.com/janessaref/google-books-search)
+* [GitHub Repository](https://github.com/joshglugatch/google-books-search)
 
 <br>
 <hr>
